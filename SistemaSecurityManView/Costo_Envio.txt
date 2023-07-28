@@ -1,0 +1,8 @@
+Lince;9.3;2 días hábiles
+S.J.L.;100.99;2 meses
+San Miguel;12.5;3 días hábiles
+Breña;7.6;4 días hábiles
+Jesus Maria;11.7;12 días hábiles
+Santa Anita;5.8;3  días hábiles
+Ate;13.3;15  días hábiles
+Pueblo Libre;3.4;2  días hábiles

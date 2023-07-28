@@ -1,0 +1,2 @@
+#include "frmNuevoTecnico.h"
+

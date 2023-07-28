@@ -1,0 +1,4 @@
+1;CDKeys;Arduino;74.5;110
+3;DigiKey;Arduino;55.5;187
+4;DigiKey;Sensor ultrasonido;4.5;140
+5;CDKeys;Sensor ultrasonido;5.5;135

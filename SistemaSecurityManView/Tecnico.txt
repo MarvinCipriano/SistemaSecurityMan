@@ -1,0 +1,5 @@
+Eduardo;Sifuentes;78542554;Edu_Si@hotmail.com;josesito123;Av. peru 231, Breña;444544445
+Jose;Mamani;52412541;jose@hotmail.com;josesito123;Av. Ecuador, Jesus Maria;452441554
+Gustabo;Cerati;65554525;Gus_Cera@hotmail.com;josesito123;Av. Los Alamos 753, Lince;456441554
+Sebastian;Flores;11124554;seb_flo@hotmail.com;lola345;Av. Argentina 144, Lima;541114223
+Glenn;Guiterrez;87654321;3;3;Av. Venezuela 454,  Breña;665442554

@@ -1,0 +1,11 @@
+1;Arduino;Microcontrolador que controla y alimenta determinados dispositivos.;Premium
+3;Sensor ultrasonido;Detectar objetos y medir distancias con sonido de alta frecuencia.;Premium
+4;Teclado matricial;Teclado empleado como un controlador para un procesador.;Premium
+5;Buzzer;Convertir la energía eléctrica en sonido.;Premium
+6;Módulo GSM SIM800;Permite mandar mensaje al usuario en caso de un incidente.;Premium
+11;Modulo Bluetooth;Se encarga de controlar el dispositivo a distancia;Premium
+
+2;Arduino;Microcontrolador que controla y alimenta determinados dispositivos.;Básico
+8;Sensor ultrasonido;Detectar objetos y medir distancias con sonido de alta frecuencia.;Básico
+9;Teclado matricial;Teclado empleado como un controlador para un procesador.;Básico
+10;Buzzer;Convertir la energía eléctrica en sonido.;Básico

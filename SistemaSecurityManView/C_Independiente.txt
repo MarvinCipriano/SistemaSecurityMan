@@ -1,0 +1,5 @@
+Pau;Navarro;88608645;Pau_Nav@hotmail.com;olitas123;Av. Javier Prado 231;Ate;989442557
+Maria;Lurimache;11000299;Maria_Luri@hotmail.com;pepito11;av. argentina 231;Lince;922321799
+Serafin;Novoa;11111111;Serafin_Novoa@hotmail.com;pepito11;av. argentina 231;S.J.L.;360676456
+Eduardo;Valdez;88227507;Edu_Valdez@hotmail.com;pedro;av. Alfonso Ugarte 132;Santa Anita;485899051
+Sebastian;Altamirano;76415239;1;1;Av. Brasil 836;Breña;999338778

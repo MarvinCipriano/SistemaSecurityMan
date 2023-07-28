@@ -1,0 +1,6 @@
+Arduino;Microcontrolador que controla y alimenta determinados dispositivos.;29;imagenarduino.jpg
+Buzzer;Convertir la energía eléctrica en sonido.;19;imagenbuzzer.jpg
+Modulo Bluetooth;Se encarga de controlar el dispositivo a distancia.;19;imagenblutu.jpg
+Módulo GSM SIM800;Permite mandar mensaje al usuario en caso de un incidente.;19;imagensim.jpg
+Sensor ultrasonido;Detectar objetos y medir distancias con sonido de alta frecuencia.;29;imagensensor.jpg
+Teclado matricial;Teclado empleado como un controlador para un procesador.;19;imagenteclado.jpg

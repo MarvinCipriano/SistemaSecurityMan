@@ -1,0 +1,4 @@
+1;Local 1;https://www.bing.com/maps/?cp=-12.068062~-77.0749&lvl=16.8;76415239;Av. Universitaria 1801;San Miguel
+2;Local 2;https://www.bing.com/maps/?cp=-12.078012~-77.083658&lvl=18.4;76415239;Av. La Marina 2355;San Miguel
+3;Local 1;https://www.bing.com/maps/?cp=-11.993264~-77.069249&lvl=14.8;11701888608;Av. Túpac Amaru 415;Ate
+4;Local 3;https://www.bing.com/maps?cp=-11.953911~-76.989354&lvl=17.9;76415239;Avenida Nicolás de Ayllón 3;S.J.L.

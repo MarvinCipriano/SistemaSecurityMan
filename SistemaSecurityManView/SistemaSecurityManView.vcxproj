@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{6F57BB47-3227-4E52-93CF-001D4C146EEC}</ProjectGuid>
+    <EnableManagedPackageReferenceSupport>true</EnableManagedPackageReferenceSupport>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>SistemaSecurityManView</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Alarma.cpp" />
+    <ClCompile Include="frmFactura.cpp" />
+    <ClCompile Include="frmAlmacenComponentes.cpp" />
+    <ClCompile Include="frmBuscarProductoSinLocal.cpp" />
+    <ClCompile Include="frmBuscarTecnicos.cpp" />
+    <ClCompile Include="frmComprar.cpp" />
+    <ClCompile Include="frmComprarComponentes.cpp" />
+    <ClCompile Include="frmDetalleCompraCliente.cpp" />
+    <ClCompile Include="frmEditarAdministrador.cpp" />
+    <ClCompile Include="frmEditarComponentes.cpp" />
+    <ClCompile Include="frmEditarEmpresa.cpp" />
+    <ClCompile Include="frmEditarEnvio.cpp" />
+    <ClCompile Include="frmEditarIndependiente.cpp" />
+    <ClCompile Include="frmEditarLocales.cpp" />
+    <ClCompile Include="frmEditarProductoProveedor.cpp" />
+    <ClCompile Include="frmEditarProveedores.cpp" />
+    <ClCompile Include="frmEditarTecnico.cpp" />
+    <ClCompile Include="frmEditarTipoProductos.cpp" />
+    <ClCompile Include="frmHistoricoOcurrencias.cpp" />
+    <ClCompile Include="frmInfoBasico.cpp" />
+    <ClCompile Include="frmInfoPremium.cpp" />
+    <ClCompile Include="frmLogin.cpp" />
+    <ClCompile Include="frmLoginAdmin.cpp" />
+    <ClCompile Include="frmLoginCliente.cpp" />
+    <ClCompile Include="frmLoginEmpresa.cpp" />
+    <ClCompile Include="frmLoginIndependiente.cpp" />
+    <ClCompile Include="frmLoginTecnico.cpp" />
+    <ClCompile Include="frmMantAdministrador.cpp" />
+    <ClCompile Include="frmMantClientes.cpp" />
+    <ClCompile Include="frmMantComponente.cpp" />
+    <ClCompile Include="frmMantEmpresa.cpp" />
+    <ClCompile Include="frmMantEnvio.cpp" />
+    <ClCompile Include="frmMantIndependiente.cpp" />
+    <ClCompile Include="frmMantProducto.cpp" />
+    <ClCompile Include="frmMantProveedores.cpp" />
+    <ClCompile Include="frmMantTecnico.cpp" />
+    <ClCompile Include="frmMantTipoProductos.cpp" />
+    <ClCompile Include="frmNuevoAdministrador.cpp" />
+    <ClCompile Include="frmNuevoComponente.cpp" />
+    <ClCompile Include="frmNuevoEmpresa.cpp" />
+    <ClCompile Include="frmNuevoEnvio.cpp" />
+    <ClCompile Include="frmNuevoIndependiente.cpp" />
+    <ClCompile Include="frmNuevoLocal.cpp" />
+    <ClCompile Include="frmNuevoProductoProveedor.cpp" />
+    <ClCompile Include="frmNuevoProveedores.cpp" />
+    <ClCompile Include="frmNuevoTecnico.cpp" />
+    <ClCompile Include="frmOrdenProduccion.cpp" />
+    <ClCompile Include="frmPagar.cpp" />
+    <ClCompile Include="frmPedidosProduccion.cpp" />
+    <ClCompile Include="frmPrincipalAdmin.cpp" />
+    <ClCompile Include="frmPrincipalClientes.cpp" />
+    <ClCompile Include="frmPrincipalTecnico.cpp" />
+    <ClCompile Include="frmProductoxLocal.cpp" />
+    <ClCompile Include="frmProveedoresTecnico.cpp" />
+    <ClCompile Include="frmReporteDistritoLocales.cpp" />
+    <ClCompile Include="frmReporteRobosxDistrito.cpp" />
+    <ClCompile Include="frmReportesIngresosxEgresos.cpp" />
+    <ClCompile Include="frmTodasFacturas.cpp" />
+    <ClCompile Include="frmVerComponentes_Tipo.cpp" />
+    <ClCompile Include="frmVerLocales.cpp" />
+    <ClCompile Include="frmVerMisCompras.cpp" />
+    <ClCompile Include="frmVerMisComprasClientes.cpp" />
+    <ClCompile Include="frmVerProductos.cpp" />
+    <ClCompile Include="frmVerProductosProveedores.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Alarma.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmFactura.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmAlmacenComponentes.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmBuscarProductoSinLocal.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmBuscarTecnicos.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmComprar.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmComprarComponentes.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmDetalleCompraCliente.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmEditarAdministrador.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmEditarComponentes.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmEditarEmpresa.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmEditarEnvio.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmEditarIndependiente.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmEditarLocales.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmEditarProductoProveedor.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmEditarProveedores.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmEditarTecnico.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmEditarTipoProductos.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmHistoricoOcurrencias.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmInfoBasico.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmInfoPremium.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmLogin.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmLoginAdmin.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmLoginCliente.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmLoginEmpresa.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmLoginIndependiente.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmLoginTecnico.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmMantAdministrador.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmMantClientes.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmMantComponente.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmMantEmpresa.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmMantEnvio.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmMantIndependiente.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmMantProducto.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmMantProveedores.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmMantTecnico.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmMantTipoProductos.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmNuevoAdministrador.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmNuevoComponente.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmNuevoEmpresa.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmNuevoEnvio.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmNuevoIndependiente.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmNuevoLocal.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmNuevoProductoProveedor.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmNuevoProveedores.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmNuevoTecnico.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmOrdenProduccion.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmPagar.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmPedidosProduccion.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmPrincipalAdmin.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmPrincipalClientes.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmPrincipalTecnico.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmProductoxLocal.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmProveedoresTecnico.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmReporteDistritoLocales.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmReporteRobosxDistrito.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmReportesIngresosxEgresos.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmTodasFacturas.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmVerComponentes_Tipo.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmVerLocales.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmVerMisCompras.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmVerMisComprasClientes.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmVerProductos.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmVerProductosProveedores.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Alarma.resx">
+      <DependentUpon>Alarma.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFactura.resx">
+      <DependentUpon>frmFactura.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAlmacenComponentes.resx">
+      <DependentUpon>frmAlmacenComponentes.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarProductoSinLocal.resx">
+      <DependentUpon>frmBuscarProductoSinLocal.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarTecnicos.resx">
+      <DependentUpon>frmBuscarTecnicos.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmComprar.resx">
+      <DependentUpon>frmComprar.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmComprarComponentes.resx">
+      <DependentUpon>frmComprarComponentes.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDetalleCompraCliente.resx">
+      <DependentUpon>frmDetalleCompraCliente.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarAdministrador.resx">
+      <DependentUpon>frmEditarAdministrador.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarComponentes.resx">
+      <DependentUpon>frmEditarComponentes.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarEmpresa.resx">
+      <DependentUpon>frmEditarEmpresa.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarEnvio.resx">
+      <DependentUpon>frmEditarEnvio.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarIndependiente.resx">
+      <DependentUpon>frmEditarIndependiente.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarLocales.resx">
+      <DependentUpon>frmEditarLocales.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarProductoProveedor.resx">
+      <DependentUpon>frmEditarProductoProveedor.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarProveedores.resx">
+      <DependentUpon>frmEditarProveedores.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarTecnico.resx">
+      <DependentUpon>frmEditarTecnico.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarTipoProductos.resx">
+      <DependentUpon>frmEditarTipoProductos.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHistoricoOcurrencias.resx">
+      <DependentUpon>frmHistoricoOcurrencias.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfoBasico.resx">
+      <DependentUpon>frmInfoBasico.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfoPremium.resx">
+      <DependentUpon>frmInfoPremium.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoginAdmin.resx">
+      <DependentUpon>frmLoginAdmin.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoginCliente.resx">
+      <DependentUpon>frmLoginCliente.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoginEmpresa.resx">
+      <DependentUpon>frmLoginEmpresa.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoginIndependiente.resx">
+      <DependentUpon>frmLoginIndependiente.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoginTecnico.resx">
+      <DependentUpon>frmLoginTecnico.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantAdministrador.resx">
+      <DependentUpon>frmMantAdministrador.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantClientes.resx">
+      <DependentUpon>frmMantClientes.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantComponente.resx">
+      <DependentUpon>frmMantComponente.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantEmpresa.resx">
+      <DependentUpon>frmMantEmpresa.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantEnvio.resx">
+      <DependentUpon>frmMantEnvio.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantIndependiente.resx">
+      <DependentUpon>frmMantIndependiente.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantProducto.resx">
+      <DependentUpon>frmMantProducto.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantProveedores.resx">
+      <DependentUpon>frmMantProveedores.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantTecnico.resx">
+      <DependentUpon>frmMantTecnico.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantTipoProductos.resx">
+      <DependentUpon>frmMantTipoProductos.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNuevoAdministrador.resx">
+      <DependentUpon>frmNuevoAdministrador.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNuevoComponente.resx">
+      <DependentUpon>frmNuevoComponente.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNuevoEmpresa.resx">
+      <DependentUpon>frmNuevoEmpresa.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNuevoEnvio.resx">
+      <DependentUpon>frmNuevoEnvio.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNuevoIndependiente.resx">
+      <DependentUpon>frmNuevoIndependiente.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNuevoLocal.resx">
+      <DependentUpon>frmNuevoLocal.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNuevoProductoProveedor.resx">
+      <DependentUpon>frmNuevoProductoProveedor.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNuevoProveedores.resx">
+      <DependentUpon>frmNuevoProveedores.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNuevoTecnico.resx">
+      <DependentUpon>frmNuevoTecnico.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrdenProduccion.resx">
+      <DependentUpon>frmOrdenProduccion.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPagar.resx">
+      <DependentUpon>frmPagar.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPedidosProduccion.resx">
+      <DependentUpon>frmPedidosProduccion.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipalAdmin.aa.resx">
+      <DependentUpon>frmPrincipalAdmin.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipalAdmin.resx">
+      <DependentUpon>frmPrincipalAdmin.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipalClientes.resx">
+      <DependentUpon>frmPrincipalClientes.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipalTecnico.resx">
+      <DependentUpon>frmPrincipalTecnico.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProductoxLocal.resx">
+      <DependentUpon>frmProductoxLocal.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProveedoresTecnico.resx">
+      <DependentUpon>frmProveedoresTecnico.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporteDistritoLocales.resx">
+      <DependentUpon>frmReporteDistritoLocales.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporteRobosxDistrito.resx">
+      <DependentUpon>frmReporteRobosxDistrito.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportesIngresosxEgresos.resx">
+      <DependentUpon>frmReportesIngresosxEgresos.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTodasFacturas.resx">
+      <DependentUpon>frmTodasFacturas.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVerComponentes_Tipo.resx">
+      <DependentUpon>frmVerComponentes_Tipo.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVerLocales.resx">
+      <DependentUpon>frmVerLocales.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVerMisCompras.resx">
+      <DependentUpon>frmVerMisCompras.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVerMisComprasClientes.resx">
+      <DependentUpon>frmVerMisComprasClientes.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVerProductos.resx">
+      <DependentUpon>frmVerProductos.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVerProductosProveedores.resx">
+      <DependentUpon>frmVerProductosProveedores.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SistemaSecurityManController\SistemaSecurityManController.vcxproj">
+      <Project>{f21c1aaa-ca9f-42a6-82f2-e3ba9ccf7b33}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\SistemaSecurityManModel\SistemaSecurityManModel.vcxproj">
+      <Project>{50631b68-433e-4302-af44-79308987a2cd}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

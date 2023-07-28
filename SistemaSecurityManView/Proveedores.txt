@@ -1,0 +1,4 @@
+CDKeys;14522252145;CDKeys@hotmail.com;Av. Brasil 123, Breña;333442443
+DigiKey;14142252145;digiKey@hotmail.com;Av. Canevaro 233, Lince;885778445
+PUCP;13522252145;PUCP@hotmail.com;Av. Colonial 548, Callao;554778551
+Paruro;13142452145;paruro@hotmail.com;Jr. Paruro 1345;998774554
